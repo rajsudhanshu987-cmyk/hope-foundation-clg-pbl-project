@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Hope Foundation | Become a Volunteer</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/volunteer.css" />
+    <script src="js/site.js" defer></script>
+    <script src="js/volunteer.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="logo">🌱 Hope Foundation</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          Dark mode
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <h1 class="page-heading">Become a Volunteer</h1>
+          <p class="sub">Give your time and help us do more.</p>
+          <form id="form" novalidate>
+            <label for="name">Full name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Rahul Sharma"
+              autocomplete="name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+            />
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="10 digit number"
+              inputmode="numeric"
+              autocomplete="tel"
+            />
+            <label for="area">Area of interest</label>
+            <select id="area" name="area">
+              <option value="">Choose an area</option>
+              <option>Education</option>
+              <option>Food</option>
+              <option>Healthcare</option>
+            </select>
+            <label for="why">Why do you want to join?</label>
+            <textarea
+              id="why"
+              name="why"
+              rows="3"
+              placeholder="Write a few lines"
+            ></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <div class="msg" id="formMsg" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="foot-box">
+        <div class="foot-col">
+          <h2>🌱 Hope Foundation</h2>
+          <p>
+            A non-profit working for education, food and healthcare for children
+            and families in need.
+          </p>
+        </div>
+        <div class="foot-col">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="about.html">Our Cause</a></li>
+            <li><a href="impact.html">How donations are used</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h2>Contact Us</h2>
+          <address>
+            📍 12 Gandhi Road, Bhopal, MP<br />
+            📞 +91 98765 43210<br />
+            ✉️ hello@hopefoundation.org
+          </address>
+        </div>
+        <div class="foot-col">
+          <h2>Follow Us</h2>
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com" target="_blank" rel="noopener"
+                >X (Twitter)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2026 Hope Foundation. All rights reserved.</p>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>
