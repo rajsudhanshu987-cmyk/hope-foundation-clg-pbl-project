@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Hope Foundation | Make a Donation</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/donate.css" />
+    <script src="js/site.js" defer></script>
+    <script src="js/donate.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="logo">🌱 Hope Foundation</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="stories.html">Stories</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          Dark mode
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <h1 class="page-heading">Make a Donation</h1>
+          <p class="sub">Every rupee counts. Choose an amount below.</p>
+          <form class="donate-box" id="donationForm" novalidate>
+            <fieldset class="amounts">
+              <legend>Select amount</legend>
+              <label class="amount-option">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="amount"
+                  value="100"
+                  required
+                />
+                <span>₹100</span>
+              </label>
+              <label class="amount-option">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="amount"
+                  value="500"
+                />
+                <span>₹500</span>
+              </label>
+              <label class="amount-option">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="amount"
+                  value="1000"
+                />
+                <span>₹1000</span>
+              </label>
+              <label class="amount-option">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="amount"
+                  value="2000"
+                />
+                <span>₹2000</span>
+              </label>
+              <label class="amount-option">
+                <input
+                  class="visually-hidden"
+                  type="radio"
+                  name="amount"
+                  id="custom-option"
+                  value="custom"
+                />
+                <span>Custom</span>
+              </label>
+            </fieldset>
+            <label class="visually-hidden" for="custom">
+              Custom donation amount in rupees
+            </label>
+            <input
+              type="number"
+              id="custom"
+              placeholder="Enter your own amount (₹)"
+              min="0"
+              step="any"
+              inputmode="decimal"
+            />
+            <p>Your donation: <strong id="total" aria-live="polite">₹0</strong></p>
+            <button type="submit" class="btn" id="donateBtn">Donate</button>
+            <div class="msg" id="donateMsg" aria-live="polite"></div>
+          </form>
+          <p class="donate-impact">
+            Want to learn more about where your gift goes?
+            <a href="impact.html">See how donations are used.</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="foot-box">
+        <div class="foot-col">
+          <h2>🌱 Hope Foundation</h2>
+          <p>
+            A non-profit working for education, food and healthcare for children
+            and families in need.
+          </p>
+        </div>
+        <div class="foot-col">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="about.html">Our Cause</a></li>
+            <li><a href="impact.html">How donations are used</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h2>Contact Us</h2>
+          <address>
+            📍 12 Gandhi Road, Bhopal, MP<br />
+            📞 +91 98765 43210<br />
+            ✉️ hello@hopefoundation.org
+          </address>
+        </div>
+        <div class="foot-col">
+          <h2>Follow Us</h2>
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com" target="_blank" rel="noopener"
+                >X (Twitter)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2026 Hope Foundation. All rights reserved.</p>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>
