@@ -102,3 +102,28 @@ section {
 .btn:focus-visible {
   background: var(--main-dark);
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 2.4rem;
+}
+
+.section-tint {
+  background: var(--soft);
+}
+
