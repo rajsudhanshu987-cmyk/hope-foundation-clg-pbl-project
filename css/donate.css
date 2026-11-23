@@ -1,0 +1,81 @@
+.donate-box {
+  display: block;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  text-align: center;
+}
+
+.amounts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 0;
+  border: 0;
+}
+
+.amounts legend {
+  width: 100%;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.amount-option {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.amount-option span {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.amount-option:hover span,
+.amount-option input:checked + span {
+  border-color: var(--main);
+  background: var(--main);
+  color: #fff;
+}
+
+.amount-option input:focus-visible + span {
+  outline: 3px solid var(--main);
+  outline-offset: 3px;
+}
+
+.donate-box input[type="number"] {
+  margin: 0 auto;
+}
+
+.donate-impact {
+  margin: 24px 0 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+.donate-impact a {
+  color: var(--main);
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
