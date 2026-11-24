@@ -1,0 +1,47 @@
+.use-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.track {
+  height: 14px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--soft);
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--main);
+}
+
+.education-fill {
+  width: 40%;
+}
+
+.food-fill {
+  width: 30%;
+}
+
+.healthcare-fill {
+  width: 20%;
+}
+
+.running-fill {
+  width: 10%;
+}
+
+.impact-cta {
+  margin: 24px 0 0;
+  text-align: center;
+}
