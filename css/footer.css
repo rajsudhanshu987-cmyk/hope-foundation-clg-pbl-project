@@ -1,0 +1,77 @@
+.site-footer {
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.foot-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.foot-col {
+  flex: 1 1 200px;
+}
+
+.foot-col h2 {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.foot-col p,
+.foot-col address {
+  margin: 0;
+  font-style: normal;
+}
+
+.foot-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foot-col li {
+  margin-bottom: 6px;
+}
+
+.foot-col a:hover {
+  color: var(--main);
+}
+
+.foot-bottom {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 20px 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.foot-bottom p {
+  margin: 0;
+}
+
+.foot-bottom a {
+  color: var(--main);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .foot-box {
+    padding: 32px 16px 18px;
+    gap: 24px;
+  }
+
+  .foot-bottom {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
